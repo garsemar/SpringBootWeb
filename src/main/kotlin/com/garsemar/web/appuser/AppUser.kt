@@ -7,7 +7,6 @@ import org.springframework.security.core.userdetails.UserDetails
 import java.util.*
 import javax.persistence.*
 
-
 @Getter
 @Setter
 @EqualsAndHashCode
@@ -28,6 +27,7 @@ class AppUser(
     val name: String,
     val user: String, email: String,
     val pass: String,
+    @Enumerated(EnumType.STRING)
     val appUserRole: AppUserRole,
     val locked: Boolean,
     private val enabled: Boolean
