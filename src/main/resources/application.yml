@@ -5,8 +5,8 @@ server:
 
 spring:
   datasource:
-    username: gamersmar
-    password: #Estoespost12
+    username: 
+    password:
     url: jdbc:postgresql://db.garsemar.com:5432/web
   jpa:
     hibernate:
